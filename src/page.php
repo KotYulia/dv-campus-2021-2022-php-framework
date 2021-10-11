@@ -40,7 +40,7 @@
     </a>
     <nav>
         <ul>
-            <?php foreach (catalogGetCategory() as $category) : ?>
+            <?php foreach (blogGetCategory() as $category) : ?>
                 <li>
                     <a href="/<?= $category['url'] ?>"><?= $category['name'] ?></a>
                 </li>
