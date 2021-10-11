@@ -4,5 +4,4 @@
     <p><?= $data['description'] ?></p>
     <span>by <?= $data['author'] ?></span>
     <span><?= $data['date'] ?></span>
-    <button type="button">Add To Cart</button>
 </div>

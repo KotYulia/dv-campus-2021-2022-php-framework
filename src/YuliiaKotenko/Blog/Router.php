@@ -27,12 +27,12 @@ class Router implements \YuliiaKotenko\Framework\Http\RouterInterface
     {
         require_once '../src/data.php';
 
-        if ($data = catalogGetCategoryByUrl($requestUrl)) {
+        if ($data = blogGetCategoryByUrl($requestUrl)) {
             $this->request->setParameter('category', $data);
             return Category::class;
         }
 
-        if ($data = catalogGetPostByUrl($requestUrl)) {
+        if ($data = blogGetPostByUrl($requestUrl)) {
             $this->request->setParameter('post', $data);
             return Post::class;
         }
