@@ -9,8 +9,8 @@ $containerBuilder = new \DI\ContainerBuilder();
 try {
     $containerBuilder->addDefinitions('../config/di.php');
     $container = $containerBuilder->build();
-    /** @var \YuliiaKotenko\Framework\Http\RequestDispatcher $requestDispatcher */
-    $requestDispatcher = $container->get(\YuliiaKotenko\Framework\Http\RequestDispatcher::class);
+    /** @var \YuliiaK\Framework\Http\RequestDispatcher $requestDispatcher */
+    $requestDispatcher = $container->get(\YuliiaK\Framework\Http\RequestDispatcher::class);
     $requestDispatcher->dispatch();
 } catch (\Exception $e) {
     echo "{$e->getMessage()} in file {$e->getFile()} at line {$e->getLine()}";
