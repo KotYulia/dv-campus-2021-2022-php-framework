@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "YuliiaKotenko\\": "src/YuliiaKotenko/"
+      "YuliiaK\\": "src/YuliiaK/"
     }
   },
   "require-dev": {
