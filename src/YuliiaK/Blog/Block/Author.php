@@ -40,8 +40,8 @@ class Author extends \YuliiaK\Framework\View\Block
      */
     public function getPostsByAuthor(): array
     {
-        return $this->postRepository->getByIds(
-            $this->getAuthor()->getPostIds()
+        return $this->postRepository->getByAuthorId(
+            $this->getAuthor()->getAuthorId()
         );
     }
 }

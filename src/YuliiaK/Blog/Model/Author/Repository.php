@@ -24,23 +24,19 @@ class Repository
             1 => $this->makeEntity()
                 ->setAuthorId(1)
                 ->setName('Anna Mort')
-                ->setUrl('anna-mort')
-                ->setPostIds([1, 4]),
+                ->setUrl('anna-mort'),
             2 => $this->makeEntity()
                 ->setAuthorId(2)
                 ->setName('Den Smith')
-                ->setUrl('den-smith')
-                ->setPostIds([2, 5]),
+                ->setUrl('den-smith'),
             3 => $this->makeEntity()
                 ->setAuthorId(3)
                 ->setName('Margo')
-                ->setUrl('margo')
-                ->setPostIds([3]),
+                ->setUrl('margo'),
             4 => $this->makeEntity()
                 ->setAuthorId(4)
                 ->setName('Alex Fil')
                 ->setUrl('alex-fil')
-                ->setPostIds([6])
         ];
     }
 

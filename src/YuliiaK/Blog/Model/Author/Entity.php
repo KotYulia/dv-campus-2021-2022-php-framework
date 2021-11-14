@@ -11,8 +11,6 @@ class Entity
 
     private string $url;
 
-    private array $posts;
-
     /**
      * @return int
      */
@@ -66,25 +64,6 @@ class Entity
     public function setUrl(string $url): Entity
     {
         $this->url = $url;
-
-        return $this;
-    }
-
-    /**
-     * @return array
-     */
-    public function getPostIds(): array
-    {
-        return $this->posts;
-    }
-
-    /**
-     * @param array $posts
-     * @return Entity
-     */
-    public function setPostIds(array $posts): Entity
-    {
-        $this->posts = $posts;
 
         return $this;
     }

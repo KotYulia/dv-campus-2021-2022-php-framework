@@ -4,8 +4,9 @@
 <section title="Newest Posts">
     <h2>Newest Posts</h2>
     <ul class="posts-list">
-        <?php $count=1;
-        foreach ($block->getNewestPosts() as $post) : ?>
+        <?php $count = 1;
+            foreach ($block->getNewestPosts() as $post) :
+        ?>
             <li class="post">
                 <a href="/<?= $post->getUrl() ?>" title="<?= $post->getName() ?>">
                     <img src="/post-img-default.jpg" alt="<?= $post->getName() ?>" width="200"/>
@@ -14,9 +15,9 @@
                 <span><?= $post->getDate() ?></span>
             </li>
             <?php if ($count++ === 3) :
-                break;
-            endif;
-        endforeach; ?>
-
+                    break;
+                endif;
+            ?>
+        <?php endforeach; ?>
     </ul>
 </section>
