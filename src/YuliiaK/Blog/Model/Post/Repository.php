@@ -94,14 +94,12 @@ class Repository
      */
     public function getByAuthorId(int $authorId): array
     {
-        $data = array_filter(
+        return array_filter(
             $this->getList(),
             static function ($post) use ($authorId) {
                 return $post->getAuthorId() === $authorId;
             }
         );
-
-        return array_pop($data);
     }
 
     /**
