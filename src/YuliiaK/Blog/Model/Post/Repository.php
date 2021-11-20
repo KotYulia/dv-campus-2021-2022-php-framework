@@ -5,6 +5,11 @@ namespace YuliiaK\Blog\Model\Post;
 
 class Repository
 {
+    public const TABLE = 'post';
+
+    public const TABLE_CATEGORY_POST = 'category_post';
+    public const TABLE_STATISTICS = 'statistics';
+
     private \DI\FactoryInterface $factory;
 
     /**

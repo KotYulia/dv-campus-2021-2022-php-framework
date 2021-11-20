@@ -11,17 +11,18 @@ DROP TABLE IF EXISTS `author`;
 CREATE TABLE `author` (
     `author_id` int unsigned NOT NULL AUTO_INCREMENT COMMENT 'Author ID',
     `name`      varchar(127) NOT NULL COMMENT 'Name',
+    `surname`   varchar(127) NOT NULL COMMENT 'Surname',
     `url`       varchar(127) NOT NULL COMMENT 'URL',
     PRIMARY KEY (`author_id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4 COMMENT ='Author Entity';
 #---
-INSERT INTO `author` (`name`, `url`)
-VALUES ('Anna Mort', 'anna-mort'),
-       ('Den Smith', 'den-smith'),
-       ('Margo', 'margo'),
-       ('Alex Fil', 'alex-fil'),
-       ('Mr. Bin', 'mr-bin');
+INSERT INTO `author` (`name`, `surname`, `url`)
+VALUES ('Anna', 'Mort', 'anna-mort'),
+       ('Den', 'Smith', 'den-smith'),
+       ('Margo', 'Smith', 'margo-smith'),
+       ('Alex', 'Fil', 'alex-fil'),
+       ('Mr. Bin', 'Mort', 'mr-bin-mort');
 #---
 CREATE TABLE `post` (
     `post_id`     int unsigned NOT NULL AUTO_INCREMENT COMMENT 'Post ID',
